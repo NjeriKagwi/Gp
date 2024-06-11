@@ -1,0 +1,475 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header section start */
+
+.navbar-scrolled{
+    background-color: #111;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.navbar-toggler-icon:focus{
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.btn1{
+    border: 2px solid rgb(255,196,81);
+    color: white;
+}
+
+.btn:hover{
+    border-color: rgb(255,196,81);
+    background: rgb(255,196,81);
+    color: black;
+}
+
+.nav-link .active{
+    color: rgb(255,196,81);
+}
+
+.nav-item .nav-link{
+    color: white;
+}
+
+.nav-item .nav-link:hover{
+    color: rgb(255,196,81);
+}
+
+.dropdown-item:hover{
+    background-color: rgb(255,196,81);
+    color: white;
+}
+
+
+
+/* Header section end */
+
+/* Home section start */
+.home{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.home-heading h1{
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    padding-top: 150px;
+}
+
+.home-heading p{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.home .box .box-inner{
+    border: 1px solid white;
+    text-align: center;
+}
+
+.home .box .box-inner:hover{
+    border: 1px solid rgb(255,196,81);
+}
+
+.home .box .box-inner h6{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* Home section end */
+
+
+/* About section start */
+.about{
+    margin-top: 50px;
+}
+
+.about h2{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.about ul li{
+    list-style-type: square;
+}
+
+.about img{
+    width: 100%;
+    min-height: 250px;
+}
+
+/* About section end */
+
+
+/* Clients section start */
+.clients{
+    padding-top: 50px;
+}
+/* Clients section end */
+
+/* Features section start */
+.features{
+    margin-top: 50px;
+}
+
+.features h5{
+    font-weight: bolder;
+}
+/* Features section end */
+
+
+/* Services section start */
+.services{
+    padding-top: 50px;
+}
+
+.services .service-title h6{
+    color: lightgrey;
+}
+
+.service-content{
+    margin-top: 50px;
+}
+
+.service-content .card{
+    border: 1px solid grey;
+    border-radius: 0;
+}
+
+.service-content .card-img i{
+    background-color: rgb(255,196,81);
+    border-radius: 5px;
+}
+
+.service-content .card .card-title h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.service-content .card .card-title h4 a:hover{
+    color: rgb(255,196,81);
+}
+
+.service-content .card-body p{
+    line-height: 2;
+}
+
+.service-content .card:hover{
+    border-color: rgb(255,196,81);
+    background-color: white;
+    transform: scaleY(1.05);
+    box-shadow: 5px px 2px 2px solid grey;
+    overflow: hidden;
+}
+
+.service-content .card:hover .card-img i{
+    border-radius: 50%;
+}
+
+/* Services section end */
+
+
+/* Call to action start */
+.cta{
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+
+.cta .btn2{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+.cta .btn2:hover{
+    border-color: rgb(255,196,81);
+    background: rgb(255,196,81);
+    color: black;
+}
+
+.cta h3{
+    padding-top: 100px;
+}
+/* Call to action end */
+
+
+/* Portfolio section start */
+.portfolio{
+    padding-top: 50px;
+}
+
+.portfolio-title h6{
+    color: lightgray;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button-group .button{
+    padding: 10px 20px;
+    background-color: rgb(255,196,81);
+    color: black;
+    font-weight: 700;
+    transition: all 0.4s;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-group .button:hover{
+    color: white;
+    font-weight: 700;
+    background-color: black;
+}
+
+.image-wrapper{
+    column-count: 3 !important;
+    column-gap: 2 !important;
+    margin-top: 50px;
+}
+
+.image-wrapper img{
+    width: 100%;
+
+}
+
+.button-group .active{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.image-wrapper .item{
+    position: relative;
+    cursor: pointer ;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.image-wrapper .item:hover img{
+    transform: scale(1.15);
+}
+
+.item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: white;
+    overflow-y: hidden;
+    font-size: 36px;
+    padding-bottom: -1;
+}
+
+.item:hover .overlay{
+    opacity: 1;
+}
+
+/* Portfolio section end */
+
+
+/* Portfolio-outer section starts */
+.portfolio-outer{
+    margin-top: 100px;
+}
+.portfolio-outer img{
+    width: 100%;
+    min-height: 250px;
+}
+
+.portfolio-outer i{
+    color: rgb(255,196,81);
+}
+
+.portfolio-outer strong{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.portfolio-outer span{
+    font-size: 15px;
+    font-weight: lighter;
+}
+/* Portfolio-outer section ends */
+
+
+/* Team section start */
+
+.team{
+    margin-top: 50px;
+}
+
+.team-title h6{
+    color: lightgrey;
+}
+
+.team-content{
+    margin-top: 70px;
+}
+
+.team-content .card .card-image img{
+    width: 100%;
+    min-height: 250px;
+}
+
+.team-content .card:hover img{
+    transform: scale(1.05);
+}
+
+.team-content .card{
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.team-content .card .card-body h6{
+    font-size: 14px;
+    color: lightgray;
+}
+
+.team-content .card{
+    border-color: whitesmoke;
+}
+/* Team section end */
+
+
+/* Contact us section start */
+.contact{
+    margin-top: 70px;
+}
+
+.contact-title h6{
+    color: lightgray;
+}
+
+.contact-body{
+    margin-top: 50px;
+}
+
+.contact-body i{
+    background: rgb(255,196,81);
+    color: black;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: rgb(255,196,81);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Contact us section end */
+
+/* Footer section start */
+.footer{
+    background-color: rgb(21,21,21);
+    margin-top: 50px;
+}
+
+.footer .footer-title i{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.footer .footer-body p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-left: 3px;
+}
+
+.footer .footer-body p a:hover{
+    color: rgb(255,196,81);
+    padding-left: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn3{
+    background-color: rgb(255,196,81);
+    color: black;
+    border-color: rgb(255,196,81);
+}
+.btn3:focus{
+    box-shadow: none;
+    border-color: rgb(255,196,81);
+    background: rgb(255,196,81);
+}
+
+#email1:focus{
+    box-shadow: none;
+    border-color: white;
+}
+
+.links i{
+    background: grey;
+    border-radius: 5px;
+}
+.links i:hover{
+    background: rgb(255,196,81);
+    color: black;
+}
+
+.arrow a{
+    background-color: rgb(255,196,8);
+    color: white;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.arrow a:hover{
+    color: rgb(255,196,81);
+    background-color: #1f1f1f;
+    opacity: 0.8;
+}
+/* Footer section end */
+
+
+
+/* Responsive design */
+@media  screen and (max-width:458px) {
+    .footer{
+        text-align: center;
+    }
+}
